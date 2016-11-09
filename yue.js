@@ -9,7 +9,7 @@ function render(){
 		$('<li class="'+c+'"><span>'+v.name+'</span><span> — '+v.author+'</span></li>').appendTo("#lists");
 	})
 }
-    $("#lists").on("click","li",function(){
+    $("#lists").on("touchend","li",function(){
     	$("#lists").find("li").removeClass("active");
     	$(this).addClass("active");
     	Index=$(this).index();
@@ -20,7 +20,7 @@ function render(){
     	$('#toux').css("background","url("+musics[Index].tx+")")
     })
      render();
-    $("#next").on("click",function(){
+    $("#next").on("touchend",function(){
     	var now=$('.active').index();
 		if(now>=$("li").length-1){
 	  		now=-1
@@ -33,7 +33,7 @@ function render(){
     	auto.html("—— "+musics[now+1].author+" ——");
     	$('html').css("background","url("+musics[now+1].bg+")")
     	$('#toux').css("background","url("+musics[now+1].tx+")")})
-	 $("#shang").on("click",function(){
+	 $("#shang").on("touchend",function(){
 	    	var now=$('.active').index();
 	    	if(now<1){
 	  		now=$("li").length
@@ -67,7 +67,7 @@ function render(){
 	}
 	
 	
-	play.on("click",function(){
+	play.on("touchend",function(){
 		if(audio.paused){
 			audio.play();
 		}else{
@@ -81,7 +81,7 @@ function render(){
         play.html("&#xe616;");
 	})
 
-	progress.on("click",function(e){
+	progress.on("touchend",function(e){
 		audio.currentTime=e.offsetX / $(this).width() * audio.duration;
 	})
 	
@@ -100,7 +100,7 @@ function render(){
 	})
 	
 	
-	PI.on("click",false)
+	PI.on("touchend",false)
 	PI.on('mousedown',function(e){
 		var r=PI.width()/2;
 		var start=r-e.offsetX;
@@ -126,7 +126,7 @@ function render(){
 //		mute.removeAttr("data-v");
 //	})
 	
-	mute.on("click",function(){
+	mute.on("touchend",function(){
 		if($(this).attr("data-v")){
 			audio.volume=$(this).attr("data-v");
 			$(this).removeAttr("data-v");
