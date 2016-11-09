@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100px;
+  background: url(bg1.jpg);
+  background-size: cover; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+#head {
+  height: 1.2rem;
+  width: 100%;
+  background: rgba(106, 27, 154, 0.5);
+  padding: 0 0.4rem;
+  font-family: 'iconfont';
+  color: #fff;
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 1.2rem; }
+  #head .left {
+    float: left; }
+  #head .right {
+    float: right; }
+
+#body {
+  position: relative;
+  color: #fff; }
+  #body #body-nei {
+    padding: 0.5rem 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    #body #body-nei #name {
+      height: 0.8rem;
+      line-height: 0.8rem;
+      text-align: center; }
+    #body #body-nei #auto {
+      height: 0.6rem;
+      line-height: 0.6rem;
+      text-align: center;
+      font-size: 14px; }
+    #body #body-nei #toux {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      margin: 0.4rem auto;
+      overflow: hidden;
+      background-size: cover;
+      background: url(tx6.jpg); }
+  #body ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 0.6rem;
+    display: none; }
+    #body ul li {
+      width: 100%;
+      height: 0.8rem;
+      line-height: 0.8rem; }
+    #body ul .active {
+      color: #008000; }
+
+#foot {
+  height: 3.5rem;
+  width: 100%;
+  background: rgba(106, 27, 154, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 100%;
+  color: #fff; }
+  #foot .yin {
+    width: 100%;
+    height: 1rem;
+    padding: 0 0.4rem;
+    line-height: 1rem; }
+    #foot .yin #cur {
+      float: left; }
+    #foot .yin #vic {
+      width: 70%;
+      height: 0.05rem;
+      background: #fff;
+      margin: auto;
+      position: relative;
+      top: 0.48rem; }
+      #foot .yin #vic #kuai {
+        height: 0.1rem;
+        width: 0.1rem;
+        background: #0085D0;
+        position: absolute;
+        left: -0.025rem;
+        top: -0.025rem;
+        border-radius: 50%; }
+    #foot .yin #dur {
+      float: right; }
+  #foot .kongzhi {
+    height: 1.3rem;
+    width: 70%;
+    line-height: 1.3rem;
+    font-family: 'iconfont';
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    text-align: center; }
+  #foot .footer {
+    width: 100%;
+    height: 1.2rem;
+    font-family: 'iconfont';
+    color: #fff;
+    line-height: 1.2rem;
+    font-size: 0.5rem;
+    padding: 0 5% 0 10%; }
+    #foot .footer .last {
+      font-size: 0.4rem; }
+    #foot .footer span {
+      width: 22%;
+      text-align: center;
+      display: inline-block; }
