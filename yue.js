@@ -1,8 +1,8 @@
 $(function(){
     var Index=0;
-    var musics=[{name:"自由的时间",author:"许巍",src:"自由.mp3",tx:"tx6.jpg",bg:"bg1.jpg"},
-    	{name:"旅行",author:"许巍",src:"旅行.mp3",tx:"tx2.jpg",bg:"bg4.jpg"},
-    	{name:"那一年",author:"许巍",src:"那一年.mp3",tx:"tx5.jpg",bg:"bg5.jpg"}]
+    var musics=[{name:"自由的时间",author:"许巍",src:"./自由.mp3",tx:"./tx6.jpg",bg:"./bg1.jpg"},
+    	{name:"旅行",author:"许巍",src:"./旅行.mp3",tx:"./tx2.jpg",bg:"./bg4.jpg"},
+    	{name:"那一年",author:"许巍",src:"./那一年.mp3",tx:"./tx5.jpg",bg:"./bg5.jpg"}]
 function render(){
 	$.each(musics,function(i,v){
 		var c=(i===Index) ? "active" : "";
